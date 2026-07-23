@@ -1,0 +1,27 @@
+{
+  "id": "./",
+  "name": "Ateliê do Açúcar",
+  "short_name": "Ateliê do Açúcar",
+  "description": "Confeitaria artesanal especializada em bolos em fatias, bolos de pote, bebidas e encomendas personalizadas para momentos especiais.",
+  "lang": "pt-BR",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FFF3E4",
+  "theme_color": "#F6D365",
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ateliê do Açúcar - Bolo em Fatias </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/iconCake.png" sizes="192x192">
+</head>
+<body>
+    <header>
+
+        <div class="logo">
+            <h1>Ateliê <span class="destaque">do Açúcar</span></h1>
+        </div>
+
+        <div class="menu-mobile" id="menu-mobile">
+            ☰
+        </div>
+
+        <nav id="menu">
+            <a href="index.html">Início</a>
+            <a href="boloFatia.html">Bolos em Fatias</a>
+            <a href="boloPote.html">Bolos de Pote</a>
+            <a href="bebidas.html">Bebidas</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+
+    </header>
+
+    <main>
+
+        <section id="fatias">
+
+            <h2>Bolos em Fatias</h2>
+
+            <div class="divona-servico">
+
+                <div class="divinha-servico">
+                    <img src="img/BoloFatiaChocolate.png" alt="Bolo em fatias de chocolate">
+                    <h3>Bolo de Chocolate</h3>
+                    <p>Massa de chocolate super fofinha, recheada com um creme intenso de chocolate e finalizada com
+                        cobertura irresistível. Perfeito para os amantes de cacau.</p>
+                    <strong>R$ 20,00</strong>
+                    <button class="btn-adicionar" data-nome="Bolo de Chocolate (Fatia)" data-preco="20.00"> Adicionar ao Carrinho </button>    
+                </div>
+
+                <div class="divinha-servico">
+                    <img src="img/BoloFatiaMaracuja.png" alt="Bolo em fatias de maracujá">
+                    <h3>Bolo de Ninho e Maracujá</h3>
+                    <p>Massa leve e macia combinada com recheio cremoso de maracujá e Ninho, equilibrando perfeitamente
+                        o doce com o toque cítrico da fruta com o doce do Ninho.</p>
+                    <strong>R$ 20,00</strong>    
+                    <button class="btn-adicionar" data-nome="Bolo de Ninho e Maracujá (Fatia)" data-preco="20.00"> Adicionar ao Carrinho </button>
+                </div>
+
+                <div class="divinha-servico">
+                    <img src="img/BoloFatiaBemCasado.webp" alt="Bolo em fatia Bem Casado">
+                    <h3>Bolo Bem-Casado</h3>
+                    <p>Massa leve e macia recheada com generosas camadas de doce de leite, finalizada com uma delicada
+                        cobertura de açúcar refinado que derrete na boca.</p>
+                    <strong>R$ 20,00</strong>  
+                    <button class="btn-adicionar" data-nome="Bolo Bem-Casado (Fatia)" data-preco="20.00"> Adicionar ao Carrinho </button>
+                </div>
+
+                <div class="divinha-servico">
+                    <img src="img/BoloFatiaRedVelt.png" alt="Bolo em fatia Red Velvet">
+                    <h3>Bolo Red Velvet</h3>
+                    <p>Massa aveludada de cor vermelha característica, combinada com um recheio cremoso e suave que
+                        proporciona um sabor sofisticado e marcante em cada pedaço.</p>
+                    <strong>R$ 20,00</strong>
+                    <button class="btn-adicionar" data-nome="Bolo Red Velvet (Fatia)" data-preco="20.00"> Adicionar ao Carrinho </button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contato">
+
+            <h2>Contato</h2>
+
+            <p>Faça sua encomenda:</p>
+
+            <div class="item-contato">
+                <img src="img/whatsapp.png" alt="WhatsApp" class="RedeSocial">
+                <span>(00) 00000-0000</span>
+            </div>
+
+            <div class="item-contato">
+                <img src="img/instagram.png" alt="Instagram" class="RedeSocial">
+                <span>@ateliedoacucar</span>
+            </div>
+
+            <p class="rodape-contato">Atendimento artesanal com carinho e dedicação para cada pedido.</p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Ateliê do Açúcar - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <div id="btn-carrinho" class="carrinho-flutuante">
+        <img src="img/carrinho.png" alt="Carrinho de Compras" class="img-carrinho">
+        <span id="contador-carrinho" class="badge-contador">0</span>
+    </div>
+
+    <div id="modal-carrinho" class="modal-carrinho hidden">
+        <div class="conteudo-carrinho">
+            <h2>Seu Carrinho <button id="fechar-carrinho">&times;</button></h2>
+            <ul id="lista-carrinho"></ul>
+            <div class="total-container">
+                <strong>Total: R$ <span id="total-carrinho">0,00</span></strong>
+            </div>
+            <button id="btn-finalizar" class="btn">Finalizar Pedido via WhatsApp</button>
+        </div>
+    </div>
+
+</body>
+</html>

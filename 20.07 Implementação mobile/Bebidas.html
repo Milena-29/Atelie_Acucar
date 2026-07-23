@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ateliê do Açúcar - Bebidas </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/iconCake.png">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Ateliê <span class="destaque">do Açúcar</span></h1>
+        </div>
+
+        <div class="menu-mobile" id="menu-mobile">
+            ☰
+        </div>
+
+        <nav id="menu">
+            <a href="index.html">Início</a>
+            <a href="boloFatia.html">Bolos em Fatias</a>
+            <a href="boloPote.html">Bolos de Pote</a>
+            <a href="bebidas.html">Bebidas</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="bebidas" class="divona-servico">
+            
+            <div class="divinha-servico">
+                <img src="img/BebidaSucoPolpa.jpg" alt="Suco de Polpa">
+                <h3>Suco de Polpa</h3>
+                <p>Escolha o sabor e o tamanho.</p>
+
+                <label for="sabor-polpa">Sabor:</label>
+                <select id="sabor-polpa">
+                    <option>Acerola</option>
+                    <option>Cajá</option>
+                    <option>Caju</option>
+                    <option>Goiaba</option>
+                    <option>Maracujá</option>
+                    <option>Manga</option>
+                </select>
+
+                <label for="tamanho-polpa">Tamanho:</label>
+                <select id="tamanho-polpa">
+                    <option value="10">300 ml - R$ 10,00</option>
+                    <option value="14">500 ml - R$ 14,00</option>
+                    <option value="18">700 ml - R$ 18,00</option>
+                </select>
+
+                <button class="btn-adicionar-bebida" data-titulo="Suco de Polpa" data-sabor="sabor-polpa" data-tamanho="tamanho-polpa"> Adicionar ao Carrinho </button>
+            </div>
+            
+            <div class="divinha-servico">
+                <img src="img/BebidaSucoNatural.jpg" alt="Suco da Fruta (Natural)">
+                <h3>Suco da Fruta (Natural)</h3>
+                <p>Escolha o sabor e o tamanho.</p>
+
+                <label for="sabor-natural">Sabor:</label>
+                <select id="sabor-natural">
+                    <option>Laranja</option>
+                    <option>Limão</option>
+                    <option>Abacaxi</option>
+                    <option>Morango</option>
+                    <option>Maracujá</option>
+                    <option>Manga</option>
+                    <option>Melancia</option>
+                    <option>Morango</option>
+                </select>
+                <label for="tamanho-natural">Tamanho:</label>
+                <select id="tamanho-natural">
+                    <option value="12">300 ml - R$ 12,00</option>
+                    <option value="16">500 ml - R$ 16,00</option>
+                    <option value="20">700 ml - R$ 20,00</option>
+                </select>
+
+                <button class="btn-adicionar-bebida" data-titulo="Suco da Fruta (Natural)" data-sabor="sabor-natural" data-tamanho="tamanho-natural"> Adicionar ao Carrinho </button>
+
+            </div>
+            
+            <div class="divinha-servico">
+                <img src="img/BebidaRefri.png" alt="Refrigerante">
+                <h3>Refrigerante</h3>
+                <p>Escolha o sabor e o tamanho.</p>
+
+                <label for="sabor-refri">Sabor:</label>
+                <select id="sabor-refri">
+                    <option>Coca-Cola</option>
+                    <option>Guaraná Antarctica</option>
+                    <option>Fanta Laranja</option>
+                    <option>Fanta Uva</option>
+                    <option>Sprite</option>
+                    <option>Pepsi</option>
+                </select>
+
+                <label for="tamanho-refri">Tamanho:</label>
+                <select id="tamanho-refri">
+                    <option value="6">350 ml - R$ 6,00</option>
+                    <option value="8">600 ml - R$ 8,00</option>
+                    <option value="10">1 L - R$ 10,00</option>
+                </select>
+
+                <button class="btn-adicionar-bebida" data-titulo="Refrigerante" data-sabor="sabor-refri" data-tamanho="tamanho-refri"> Adicionar ao Carrinho </button>
+
+            </div>
+
+        </section>
+
+        <section id="contato">
+
+            <h2>Contato</h2>
+
+            <p>Faça sua encomenda:</p>
+
+            <div class="item-contato">
+                <img src="img/whatsapp.png" alt="WhatsApp" class="RedeSocial">
+                <span>(00) 00000-0000</span>
+            </div>
+
+            <div class="item-contato">
+                <img src="img/instagram.png" alt="Instagram" class="RedeSocial">
+                <span>@ateliedoacucar</span>
+            </div>
+
+            <p class="rodape-contato">Atendimento artesanal com carinho e dedicação para cada pedido.</p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Ateliê do Açúcar - Todos os direitos reservados.</p>
+    </footer>
+
+    <div id="btn-carrinho" class="carrinho-flutuante">
+        <img src="img/carrinho.png" alt="Carrinho de Compras" class="img-carrinho">
+        <span id="contador-carrinho" class="badge-contador">0</span>
+    </div>
+
+    <div id="modal-carrinho" class="modal-carrinho hidden">
+        <div class="conteudo-carrinho">
+            <h2>Seu Carrinho <button id="fechar-carrinho">&times;</button></h2>
+            <ul id="lista-carrinho"></ul>
+            <div class="total-container">
+                <strong>Total: R$ <span id="total-carrinho">0,00</span></strong>
+            </div>
+            <button id="btn-finalizar" class="btn">Finalizar Pedido via WhatsApp</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

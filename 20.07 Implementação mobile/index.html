@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ateliê do Açúcar - Home </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#F6D365 , #FFFFFF">
+    <link rel="icon" href="img/iconCake.png">
+    <link rel="apple-touch-icon" href="./img/iconCake.png">
+    <link rel="manifest" href="./manifest.webmanifest">
+</head>
+<body>
+
+    <header>
+
+        <div class="logo">
+            <h1>Ateliê <span class="destaque">do Açúcar</span></h1>
+        </div>
+
+        <div class="menu-mobile" id="menu-mobile">
+            ☰
+        </div>
+
+        <nav id="menu">
+            <a href="index.html">Início</a>
+            <a href="boloFatia.html">Bolos em Fatias</a>
+            <a href="boloPote.html">Bolos de Pote</a>
+            <a href="bebidas.html">Bebidas</a>
+            <a href="#contato">Contato</a>   
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="inicio" class="banner">
+
+            <div class="banner-conteudo">
+                <h2>Bolos e sobremesas feitos com carinho</h2>
+
+                <p>
+                    Delícias artesanais preparadas com ingredientes selecionados
+                    para tornar seus momentos ainda mais especiais.
+                </p>
+
+                <a href="boloFatia.html" class="btn">Ver Cardápio</a>
+            </div>
+
+        </section>
+
+        <section class="destaques">
+
+            <h2>Nossos Destaques</h2>
+
+            <div class="cards">
+
+                <a href="BoloFatia.html" class="card">
+                    <img src="img/BoloFatiaChocolate.png" alt="Bolo de Chocolate">
+                    <h3>Bolos em Fatias</h3>
+                    <p>Sabores irresistíveis para adoçar seu dia.</p>
+                </a>
+
+                <a href="BoloPote.html" class="card">
+                    <img src="img/BoloPoteRedVelt.png" alt="Bolo de Pote Red Velvet">
+                    <h3>Bolos de Pote</h3>
+                    <p>Praticidade e sabor em cada colherada.</p>
+                </a>
+
+                <a href="bebidas.html" class="card">
+                    <img src="img/BebidaSucoPolpa.jpg" alt="Suco de Polpa">
+                    <h3>Bebidas</h3>
+                    <p>Sucos naturais, polpas e refrigerantes gelados.</p>
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="cta">
+
+            <h2>Faça sua encomenda hoje mesmo!</h2>
+
+            <p>
+                Transforme aniversários, reuniões e momentos especiais
+                em experiências ainda mais doces.
+            </p>
+
+            <a href="#contato" class="btn">Entrar em Contato</a>
+
+        </section>
+
+        <section class="sobre">
+
+            <h2>Por que escolher o Ateliê do Açúcar?</h2>
+
+            <div class="beneficios">
+
+                <div>
+                    <h3>Produção Artesanal</h3><br>
+                    <p>Receitas preparadas com carinho e atenção aos detalhes.</p>
+                </div>
+
+                <div>
+                    <h3>Ingredientes Selecionados</h3><br>
+                    <p>Qualidade garantida para oferecer o melhor sabor.</p>
+                </div>
+
+                <div>
+                    <h3>Encomendas Personalizadas</h3><br>
+                    <p>Produzimos doces para festas, eventos e datas especiais.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contato">
+
+            <h2>Contato</h2>
+
+            <p>Faça sua encomenda:</p>
+
+            <div class="item-contato">
+                <img src="img/whatsapp.png" alt="WhatsApp" class="RedeSocial">
+                <span>(00) 00000-0000</span>
+            </div>
+
+            <div class="item-contato">
+                <img src="img/instagram.png" alt="Instagram" class="RedeSocial">
+                <span>@ateliedoacucar</span>
+            </div>
+
+            <p class="rodape-contato">Atendimento artesanal com carinho e dedicação para cada pedido.</p>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Ateliê do Açúcar - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <div id="btn-carrinho" class="carrinho-flutuante">
+        <img src="img/carrinho.png" alt="Carrinho de Compras" class="img-carrinho">
+        <span id="contador-carrinho" class="badge-contador">0</span>
+    </div>
+
+    <div id="modal-carrinho" class="modal-carrinho hidden">
+        <div class="conteudo-carrinho">
+            <h2>Seu Carrinho <button id="fechar-carrinho">&times;</button></h2>
+            <ul id="lista-carrinho"></ul>
+            <div class="total-container">
+                <strong>Total: R$ <span id="total-carrinho">0,00</span></strong>
+            </div>
+            <button id="btn-finalizar" class="btn">Finalizar Pedido via WhatsApp</button>
+        </div>
+    </div>
+
+</body>
+</html>
